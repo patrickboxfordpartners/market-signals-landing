@@ -1,0 +1,339 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Market Signals - Track Stock Sentiment with AI</title>
+    <meta name="description" content="Real-time stock sentiment tracking powered by AI. Get alerts on mention spikes, high-confidence predictions, and source credibility rankings." />
+  </head>
+  <body class="bg-gray-950 text-white antialiased">
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full bg-gray-950/80 backdrop-blur-sm border-b border-gray-800 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <span class="text-xl font-bold">Market Signals</span>
+          </div>
+          <a
+            href="#waitlist"
+            class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-medium transition-colors"
+          >
+            Get Early Access
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-4">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-sm text-emerald-400 mb-8">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          Now tracking sentiment across Reddit, X, and financial news
+        </div>
+
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+          Know What the Market
+          <br />
+          is Thinking
+        </h1>
+
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
+          Real-time stock sentiment tracking powered by AI. Get alerts on mention spikes,
+          high-confidence predictions, and credibility-ranked sources — before the market moves.
+        </p>
+
+        <a
+          href="#waitlist"
+          class="inline-block px-8 py-4 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-semibold text-lg transition-colors shadow-lg shadow-emerald-600/20"
+        >
+          Join the Waitlist
+        </a>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="py-20 px-4 bg-gray-900/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+          Social sentiment moves markets.<br />
+          <span class="text-gray-400">Most investors see it too late.</span>
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 bg-gray-800/50 border border-gray-700 rounded-xl">
+            <div class="text-red-400 text-4xl mb-4">⚠️</div>
+            <h3 class="text-lg font-semibold mb-2">Noise Everywhere</h3>
+            <p class="text-gray-400">Reddit, X, Discord, news — scattered signals across dozens of sources.</p>
+          </div>
+
+          <div class="p-6 bg-gray-800/50 border border-gray-700 rounded-xl">
+            <div class="text-orange-400 text-4xl mb-4">🔍</div>
+            <h3 class="text-lg font-semibold mb-2">Who to Trust?</h3>
+            <p class="text-gray-400">Every source claims conviction. No way to verify track records.</p>
+          </div>
+
+          <div class="p-6 bg-gray-800/50 border border-gray-700 rounded-xl">
+            <div class="text-yellow-400 text-4xl mb-4">⏰</div>
+            <h3 class="text-lg font-semibold mb-2">Always Behind</h3>
+            <p class="text-gray-400">By the time you notice the spike, the move already happened.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-20 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+            Built for Signal Hunters
+          </h2>
+          <p class="text-xl text-gray-400">
+            Every feature designed to surface alpha before the crowd notices.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <!-- Feature 1 -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="text-emerald-500 text-5xl mb-4">🚨</div>
+              <h3 class="text-2xl font-bold mb-4">Spike Detection Alerts</h3>
+              <p class="text-gray-400 mb-4">
+                Instant notifications when mention frequency spikes above baseline.
+                Customizable thresholds per ticker.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-emerald-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Real-time monitoring across Reddit, X, news</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-emerald-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>30-day rolling averages for context</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-emerald-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Track unique sources driving the conversation</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="text-purple-500 text-5xl mb-4">🎯</div>
+              <h3 class="text-2xl font-bold mb-4">AI-Powered Prediction Extraction</h3>
+              <p class="text-gray-400 mb-4">
+                Grok AI analyzes every mention to extract predictions with price targets,
+                timeframes, and confidence scores.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Lynch/Munger frameworks for reasoning quality</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Data discipline scoring (sources cited)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Automatic validation against actual outcomes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="text-blue-500 text-5xl mb-4">🏆</div>
+              <h3 class="text-2xl font-bold mb-4">Source Credibility Rankings</h3>
+              <p class="text-gray-400 mb-4">
+                Track record verification for every account. Know who actually has alpha
+                vs. who just has followers.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-blue-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Win rate, accuracy, and average return</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-blue-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Reasoning quality and transparency metrics</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-blue-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Leaderboard by platform and asset class</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="text-orange-500 text-5xl mb-4">📊</div>
+              <h3 class="text-2xl font-bold mb-4">Daily Digest & Custom Alerts</h3>
+              <p class="text-gray-400 mb-4">
+                Morning briefing with yesterday's top signals. Set custom thresholds
+                for spikes, confidence levels, and sources you trust.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Email and webhook delivery options</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Per-ticker mention thresholds</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Only high-confidence predictions surfaced</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 px-4 bg-gray-900/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">How It Works</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              1
+            </div>
+            <h3 class="text-xl font-semibold mb-2">We Scan</h3>
+            <p class="text-gray-400">
+              Hourly scrapes across Reddit, X, and financial news. Extract tickers, sentiment, and predictions.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              2
+            </div>
+            <h3 class="text-xl font-semibold mb-2">AI Analyzes</h3>
+            <p class="text-gray-400">
+              Grok scores reasoning quality, data discipline, and confidence. Validates predictions against outcomes.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+              3
+            </div>
+            <h3 class="text-xl font-semibold mb-2">You Get Alerts</h3>
+            <p class="text-gray-400">
+              Real-time notifications when spikes happen or high-confidence predictions emerge. No noise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="py-20 px-4">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-4">
+          Join the Waitlist
+        </h2>
+        <p class="text-xl text-gray-400 mb-8">
+          Get early access and help shape the product. Limited spots available for the private beta.
+        </p>
+
+        <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+          <input
+            type="email"
+            placeholder="your@email.com"
+            required
+            class="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+          />
+          <button
+            type="submit"
+            class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-semibold transition-colors"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <p class="text-sm text-gray-500 mt-4">
+          We'll email you when we launch. No spam, ever.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <span class="font-semibold">Market Signals</span>
+          </div>
+
+          <p class="text-gray-500 text-sm">
+            © 2024 Market Signals. All rights reserved.
+          </p>
+
+          <div class="flex gap-6 text-sm text-gray-400">
+            <a href="#" class="hover:text-white transition-colors">Privacy</a>
+            <a href="#" class="hover:text-white transition-colors">Terms</a>
+            <a href="#" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
