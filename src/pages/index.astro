@@ -291,8 +291,9 @@ import '../styles/global.css';
           Get early access and help shape the product. Limited spots available for the private beta.
         </p>
 
-        <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+        <form id="waitlist-form" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
           <input
+            id="waitlist-email"
             type="email"
             placeholder="your@email.com"
             required
@@ -300,13 +301,14 @@ import '../styles/global.css';
           />
           <button
             type="submit"
-            class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-semibold transition-colors"
+            id="waitlist-submit"
+            class="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Sign Up
           </button>
         </form>
 
-        <p class="text-sm text-gray-500 mt-4">
+        <p id="waitlist-message" class="text-sm text-gray-500 mt-4">
           We'll email you when we launch. No spam, ever.
         </p>
       </div>
@@ -335,5 +337,51 @@ import '../styles/global.css';
         </div>
       </div>
     </footer>
+
+    <script>
+      document.getElementById('waitlist-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const form = e.target as HTMLFormElement;
+        const emailInput = document.getElementById('waitlist-email') as HTMLInputElement;
+        const submitBtn = document.getElementById('waitlist-submit') as HTMLButtonElement;
+        const message = document.getElementById('waitlist-message') as HTMLParagraphElement;
+
+        const email = emailInput.value.trim();
+
+        if (!email) return;
+
+        // Disable form
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Signing Up...';
+
+        try {
+          const response = await fetch('/api/waitlist', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email })
+          });
+
+          const data = await response.json();
+
+          if (data.success) {
+            message.className = 'text-sm text-emerald-400 mt-4';
+            message.textContent = data.message || 'Thanks for signing up!';
+            form.reset();
+          } else {
+            message.className = 'text-sm text-red-400 mt-4';
+            message.textContent = data.error || 'Something went wrong. Please try again.';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Sign Up';
+          }
+        } catch (error) {
+          console.error('Waitlist error:', error);
+          message.className = 'text-sm text-red-400 mt-4';
+          message.textContent = 'Network error. Please try again.';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Sign Up';
+        }
+      });
+    </script>
   </body>
 </html>
