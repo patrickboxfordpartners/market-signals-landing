@@ -95,7 +95,7 @@ import '../styles/global.css';
     </section>
 
     <!-- Features -->
-    <section class="py-20 px-4">
+    <section id="features" class="py-20 px-4">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl sm:text-5xl font-bold mb-4">
@@ -107,7 +107,79 @@ import '../styles/global.css';
         </div>
 
         <div class="grid lg:grid-cols-2 gap-12 items-start">
-          <!-- Feature 1 -->
+          <!-- Feature 1: ML Price Predictions -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="text-purple-500 text-5xl">🧠</div>
+                <span class="px-3 py-1 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">NEW</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">ML Price Predictions</h3>
+              <p class="text-gray-400 mb-4">
+                Machine learning models predict 24-hour and 7-day price movements
+                based on sentiment, mentions, and source credibility.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Bullish/Bearish direction with confidence scores</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Expected move magnitude predictions</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Model accuracy tracking and validation</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 2: Technical Analysis -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="text-cyan-500 text-5xl">📈</div>
+                <span class="px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">NEW</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Technical Indicators</h3>
+              <p class="text-gray-400 mb-4">
+                Professional-grade technical analysis with RSI, MACD, and Bollinger Bands
+                to complement sentiment signals.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-cyan-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>RSI with overbought/oversold signals</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-cyan-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>MACD crossover detection</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-cyan-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Bollinger Band breakout alerts</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 3: Spike Detection -->
           <div class="relative">
             <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-2xl blur opacity-20"></div>
             <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
@@ -128,7 +200,7 @@ import '../styles/global.css';
                   <svg class="w-5 h-5 text-emerald-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                   </svg>
-                  <span>30-day rolling averages for context</span>
+                  <span>Volume spike analysis with price correlation</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <svg class="w-5 h-5 text-emerald-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -140,40 +212,7 @@ import '../styles/global.css';
             </div>
           </div>
 
-          <!-- Feature 2 -->
-          <div class="relative">
-            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20"></div>
-            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
-              <div class="text-purple-500 text-5xl mb-4">🎯</div>
-              <h3 class="text-2xl font-bold mb-4">AI-Powered Prediction Extraction</h3>
-              <p class="text-gray-400 mb-4">
-                Grok AI analyzes every mention to extract predictions with price targets,
-                timeframes, and confidence scores.
-              </p>
-              <ul class="space-y-2 text-gray-300">
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span>Lynch/Munger frameworks for reasoning quality</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span>Data discipline scoring (sources cited)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-purple-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span>Automatic validation against actual outcomes</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Feature 3 -->
+          <!-- Feature 4: Source Credibility -->
           <div class="relative">
             <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20"></div>
             <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
@@ -206,11 +245,47 @@ import '../styles/global.css';
             </div>
           </div>
 
-          <!-- Feature 4 -->
+          <!-- Feature 5: Charts & Fundamentals -->
           <div class="relative">
-            <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur opacity-20"></div>
+            <div class="absolute -inset-1 bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl blur opacity-20"></div>
             <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
-              <div class="text-orange-500 text-5xl mb-4">📊</div>
+              <div class="flex items-center gap-3 mb-4">
+                <div class="text-amber-500 text-5xl">📊</div>
+                <span class="px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20">NEW</span>
+              </div>
+              <h3 class="text-2xl font-bold mb-4">Advanced Charts & Fundamentals</h3>
+              <p class="text-gray-400 mb-4">
+                Professional candlestick charts, earnings surprises, and key financial
+                metrics all in one place.
+              </p>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-amber-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>OHLC candlestick charts with volume</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-amber-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Earnings surprise visualization</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-5 h-5 text-amber-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>P/E, ROE, debt ratios with trend sparklines</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Feature 6: Custom Alerts -->
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-rose-600 to-red-600 rounded-2xl blur opacity-20"></div>
+            <div class="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+              <div class="text-rose-500 text-5xl mb-4">🔔</div>
               <h3 class="text-2xl font-bold mb-4">Daily Digest & Custom Alerts</h3>
               <p class="text-gray-400 mb-4">
                 Morning briefing with yesterday's top signals. Set custom thresholds
@@ -218,19 +293,19 @@ import '../styles/global.css';
               </p>
               <ul class="space-y-2 text-gray-300">
                 <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 text-rose-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                   </svg>
                   <span>Email and webhook delivery options</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 text-rose-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                   </svg>
                   <span>Per-ticker mention thresholds</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <svg class="w-5 h-5 text-orange-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-5 h-5 text-rose-500 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                   </svg>
                   <span>Only high-confidence predictions surfaced</span>
@@ -243,7 +318,7 @@ import '../styles/global.css';
     </section>
 
     <!-- How It Works -->
-    <section class="py-20 px-4 bg-gray-900/50">
+    <section id="how-it-works" class="py-20 px-4 bg-gray-900/50">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-4xl font-bold text-center mb-16">How It Works</h2>
 
@@ -315,46 +390,48 @@ import '../styles/global.css';
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-800 bg-gray-900/50">
+    <footer class="border-t border-slate-900 bg-slate-950">
       <div class="max-w-7xl mx-auto px-6 py-16 lg:px-8">
-        <div class="grid gap-12 md:grid-cols-4">
+        <div class="grid gap-12 text-center md:grid-cols-4 md:text-left">
           <!-- Brand -->
           <div class="md:col-span-1">
-            <div class="flex items-center gap-2 mb-4">
-              <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            <a href="/" class="inline-block mb-6">
+              <svg width="180" height="36" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="#10B981"/>
+                <path d="M13 20h8m0 0v8m0-8l-8 8-4-4-6 6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(6, 6) scale(0.7)"/>
+                <text x="52" y="26" font-family="'Inter', sans-serif" font-size="20" fill="#CBD5E1" font-weight="500">street</text>
+                <text x="108" y="26" font-family="'Inter', sans-serif" font-size="20" fill="#FFFFFF" font-weight="800">INSIGHTS</text>
               </svg>
-              <span class="text-lg font-bold">Street Insights</span>
-            </div>
-            <p class="text-sm leading-relaxed text-gray-400">
+            </a>
+            <p class="text-sm text-slate-400 leading-relaxed mb-4">
               Real-time stock sentiment tracking with AI-powered credibility scoring. Know what the market is thinking before it moves.
+            </p>
+            <p>
+              <a href="mailto:support@getstreetinsights.com" class="text-sm text-slate-500 hover:text-slate-300 transition-colors">
+                support@getstreetinsights.com
+              </a>
             </p>
           </div>
 
           <!-- Product -->
           <div>
-            <h4 class="mb-4 text-xs font-semibold uppercase tracking-wider text-gray-500">
+            <h4 class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500">
               Product
             </h4>
-            <ul class="space-y-3">
+            <ul class="space-y-3 text-sm">
               <li>
-                <a href="#" class="text-sm text-gray-300 transition-colors hover:text-white">
+                <a href="#features" class="text-slate-400 hover:text-slate-100 transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" class="text-sm text-gray-300 transition-colors hover:text-white">
-                  Pricing
+                <a href="#how-it-works" class="text-slate-400 hover:text-slate-100 transition-colors">
+                  How It Works
                 </a>
               </li>
               <li>
-                <a href="https://app.getstreetinsights.com" class="text-sm text-gray-300 transition-colors hover:text-white">
-                  Sign In
-                </a>
-              </li>
-              <li>
-                <a href="#waitlist" class="text-sm text-gray-300 transition-colors hover:text-white">
-                  Join Waitlist
+                <a href="https://app.getstreetinsights.com" class="text-slate-400 hover:text-slate-100 transition-colors">
+                  Dashboard
                 </a>
               </li>
             </ul>
@@ -362,22 +439,22 @@ import '../styles/global.css';
 
           <!-- Company -->
           <div>
-            <h4 class="mb-4 text-xs font-semibold uppercase tracking-wider text-gray-500">
+            <h4 class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500">
               Company
             </h4>
-            <ul class="space-y-3">
+            <ul class="space-y-3 text-sm">
               <li>
-                <a href="https://boxfordpartners.com/about" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-300 transition-colors hover:text-white">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="https://boxfordpartners.com" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-300 transition-colors hover:text-white">
+                <a href="https://www.boxfordpartners.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-slate-100 transition-colors">
                   Boxford Partners
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@getstreetinsights.com" class="text-sm text-gray-300 transition-colors hover:text-white">
+                <a href="mailto:support@getstreetinsights.com" class="text-slate-400 hover:text-slate-100 transition-colors">
+                  Support
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@getstreetinsights.com" class="text-slate-400 hover:text-slate-100 transition-colors">
                   Contact
                 </a>
               </li>
@@ -386,32 +463,36 @@ import '../styles/global.css';
 
           <!-- Legal -->
           <div>
-            <h4 class="mb-4 text-xs font-semibold uppercase tracking-wider text-gray-500">
+            <h4 class="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500">
               Legal
             </h4>
-            <ul class="space-y-3">
+            <ul class="space-y-3 text-sm">
               <li>
-                <a href="#" class="text-sm text-gray-300 transition-colors hover:text-white">
+                <a href="/privacy" class="text-slate-400 hover:text-slate-100 transition-colors">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" class="text-sm text-gray-300 transition-colors hover:text-white">
+                <a href="/terms" class="text-slate-400 hover:text-slate-100 transition-colors">
                   Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" class="text-sm text-gray-300 transition-colors hover:text-white">
-                  Acceptable Use
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="mt-16 border-t border-gray-800 pt-8">
-          <p class="text-center text-xs text-gray-500">
-            © 2026 Street Insights. A Boxford Partners product. All rights reserved.
+        <div class="mt-16 border-t border-slate-900 pt-8">
+          <p class="text-xs text-slate-500">
+            © 2026 Street Insights. All rights reserved. A{' '}
+            <a
+              href="https://www.boxfordpartners.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-slate-300 transition-colors"
+            >
+              Boxford Partners
+            </a>{' '}
+            product.
           </p>
         </div>
       </div>
