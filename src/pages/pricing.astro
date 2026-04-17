@@ -1,0 +1,305 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pricing - Street Insights</title>
+    <meta name="description" content="Street Insights pricing. Pro plan at $49/mo for serious traders. Enterprise for teams." />
+  </head>
+  <body class="bg-gray-950 text-white antialiased">
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full bg-gray-950/80 backdrop-blur-sm border-b border-gray-800 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="/" class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <span class="text-xl font-bold">Street Insights</span>
+          </a>
+          <div class="flex items-center gap-4">
+            <a
+              href="https://app.getstreetinsights.com/login"
+              class="text-sm text-gray-300 hover:text-white transition-colors"
+            >
+              Sign In
+            </a>
+            <a
+              href="#plans"
+              class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-medium transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+          Simple, transparent pricing
+        </h1>
+        <p class="text-xl text-gray-400">
+          Start free. Upgrade when you need more signals and alerts.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section id="plans" class="py-12 px-4">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Free -->
+          <div class="p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+            <h3 class="text-lg font-semibold text-gray-400 mb-2">Free</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-bold">$0</span>
+              <span class="text-gray-500">/mo</span>
+            </div>
+            <p class="text-gray-400 mb-6">For exploring the platform</p>
+
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Track up to 10 tickers</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Basic sentiment signals</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>5 email alerts/month</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Daily digest email</span>
+              </li>
+            </ul>
+
+            <a
+              href="https://app.getstreetinsights.com/login"
+              class="block w-full py-3 text-center rounded-lg border border-gray-700 text-gray-300 hover:bg-gray-800 transition-colors font-medium"
+            >
+              Get Started Free
+            </a>
+          </div>
+
+          <!-- Pro -->
+          <div class="p-8 bg-gray-900 border-2 border-emerald-500 rounded-2xl relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-600 rounded-full text-xs font-semibold">
+              MOST POPULAR
+            </div>
+            <h3 class="text-lg font-semibold text-emerald-400 mb-2">Pro</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-bold">$49</span>
+              <span class="text-gray-500">/mo</span>
+            </div>
+            <p class="text-gray-400 mb-6">For serious traders</p>
+
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Track up to 100 tickers</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span><strong>ML price predictions</strong></span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span><strong>Technical indicators</strong> (RSI, MACD)</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>50 real-time alerts/month</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Source credibility rankings</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Advanced charts & fundamentals</span>
+              </li>
+            </ul>
+
+            <button
+              id="btn-pro"
+              class="block w-full py-3 text-center rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white transition-colors font-semibold"
+            >
+              Start Pro Trial
+            </button>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="p-8 bg-gray-900 border border-gray-800 rounded-2xl">
+            <h3 class="text-lg font-semibold text-gray-400 mb-2">Enterprise</h3>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-bold">$199</span>
+              <span class="text-gray-500">/mo</span>
+            </div>
+            <p class="text-gray-400 mb-6">For teams and funds</p>
+
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span><strong>Unlimited</strong> tickers</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Everything in Pro</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span><strong>Unlimited</strong> alerts</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>API access</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Webhook integrations</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Priority support</span>
+              </li>
+            </ul>
+
+            <button
+              id="btn-enterprise"
+              class="block w-full py-3 text-center rounded-lg border border-gray-700 text-gray-300 hover:bg-gray-800 transition-colors font-medium"
+            >
+              Contact Sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4 bg-gray-900/50">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+        <div class="space-y-6">
+          <div class="border-b border-gray-800 pb-6">
+            <h3 class="text-lg font-semibold mb-2">Can I cancel anytime?</h3>
+            <p class="text-gray-400">Yes. No contracts, cancel anytime from your dashboard. Your access continues until the end of your billing period.</p>
+          </div>
+
+          <div class="border-b border-gray-800 pb-6">
+            <h3 class="text-lg font-semibold mb-2">What payment methods do you accept?</h3>
+            <p class="text-gray-400">We accept all major credit cards through Stripe. Enterprise customers can pay via invoice.</p>
+          </div>
+
+          <div class="border-b border-gray-800 pb-6">
+            <h3 class="text-lg font-semibold mb-2">Is there a free trial?</h3>
+            <p class="text-gray-400">Yes! Pro plans include a 14-day free trial. No credit card required to start.</p>
+          </div>
+
+          <div class="border-b border-gray-800 pb-6">
+            <h3 class="text-lg font-semibold mb-2">What's included in ML predictions?</h3>
+            <p class="text-gray-400">Our ML models analyze sentiment, mention velocity, source credibility, and technical indicators to predict 24-hour and 7-day price movements with confidence scores.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6 py-12 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <a href="/" class="flex items-center gap-2">
+            <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <span class="font-bold">Street Insights</span>
+          </a>
+          <p class="text-xs text-slate-500">
+            © 2026 Street Insights. A <a href="https://www.boxfordpartners.com" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition-colors">Boxford Partners</a> product.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('btn-pro')?.addEventListener('click', async () => {
+        const btn = document.getElementById('btn-pro') as HTMLButtonElement;
+        btn.disabled = true;
+        btn.textContent = 'Redirecting...';
+
+        try {
+          const response = await fetch('/api/checkout', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              priceKey: 'pro_monthly',
+              email: '', // User will enter on Stripe checkout
+            })
+          });
+
+          const data = await response.json();
+
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            alert(data.error || 'Something went wrong');
+            btn.disabled = false;
+            btn.textContent = 'Start Pro Trial';
+          }
+        } catch (error) {
+          console.error('Checkout error:', error);
+          alert('Network error. Please try again.');
+          btn.disabled = false;
+          btn.textContent = 'Start Pro Trial';
+        }
+      });
+
+      document.getElementById('btn-enterprise')?.addEventListener('click', () => {
+        window.location.href = 'mailto:hello@getstreetinsights.com?subject=Enterprise%20Inquiry';
+      });
+    </script>
+  </body>
+</html>
