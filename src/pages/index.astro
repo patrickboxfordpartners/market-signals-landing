@@ -11,6 +11,12 @@ import '../styles/global.css';
     <meta name="generator" content={Astro.generator} />
     <title>Street Insights - Track Stock Sentiment with AI</title>
     <meta name="description" content="Real-time stock sentiment tracking powered by AI. Get alerts on mention spikes, high-confidence predictions, and source credibility rankings." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
   </head>
   <body class="bg-gray-950 text-white antialiased">
     <!-- Nav -->
@@ -58,10 +64,10 @@ import '../styles/global.css';
           Now tracking sentiment across Reddit, X, and financial news
         </div>
 
-        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-          Know What the Market
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+          <span class="text-white">Know What the Market</span>
           <br />
-          is Thinking
+          <span class="text-emerald-400">is Thinking</span>
         </h1>
 
         <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
