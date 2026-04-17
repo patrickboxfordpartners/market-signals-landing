@@ -5,11 +5,11 @@ const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY, {
   apiVersion: '2024-12-18.acacia',
 });
 
-const PRICE_IDS = {
-  pro_monthly: 'price_PLACEHOLDER_PRO_MONTHLY',
-  pro_yearly: 'price_PLACEHOLDER_PRO_YEARLY',
-  enterprise_monthly: 'price_PLACEHOLDER_ENTERPRISE_MONTHLY',
-  enterprise_yearly: 'price_PLACEHOLDER_ENTERPRISE_YEARLY',
+const PRICE_IDS: Record<string, string> = {
+  pro_monthly: import.meta.env.STRIPE_PRICE_PRO_MONTHLY,
+  pro_yearly: import.meta.env.STRIPE_PRICE_PRO_YEARLY,
+  enterprise_monthly: import.meta.env.STRIPE_PRICE_ENTERPRISE_MONTHLY,
+  enterprise_yearly: import.meta.env.STRIPE_PRICE_ENTERPRISE_YEARLY,
 };
 
 export const POST: APIRoute = async ({ request }) => {
