@@ -1,0 +1,209 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes" />
+    <title>Sign Up - Street Insights</title>
+    <meta name="description" content="Create your Street Insights account." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-white antialiased">
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full bg-gray-950/80 backdrop-blur-sm border-b border-gray-800 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="/" class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <span class="text-xl font-bold">Street Insights</span>
+          </a>
+          <a
+            href="/pricing"
+            class="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            Pricing
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sign Up Form -->
+    <section class="pt-32 pb-20 px-4 min-h-screen flex items-start justify-center">
+      <div class="w-full max-w-sm">
+        <div class="text-center mb-8">
+          <svg class="w-12 h-12 text-emerald-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          <h1 class="text-2xl font-bold">Create your account</h1>
+          <p class="text-sm text-gray-400 mt-2">Start tracking sentiment signals today</p>
+        </div>
+
+        <form id="signup-form" class="bg-gray-900 border border-gray-800 rounded-2xl p-6 space-y-4">
+          <div id="signup-error" class="hidden text-sm text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-2"></div>
+
+          <div class="space-y-1">
+            <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="you@example.com"
+              class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+            />
+          </div>
+
+          <div class="space-y-1">
+            <label for="password" class="block text-sm font-medium text-gray-300">Password</label>
+            <input
+              id="password"
+              type="password"
+              required
+              placeholder="••••••••"
+              minlength="8"
+              class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+            />
+            <p class="text-xs text-gray-500">At least 8 characters</p>
+          </div>
+
+          <div class="space-y-1">
+            <label for="confirm-password" class="block text-sm font-medium text-gray-300">Confirm Password</label>
+            <input
+              id="confirm-password"
+              type="password"
+              required
+              placeholder="••••••••"
+              minlength="8"
+              class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+            />
+          </div>
+
+          <button
+            type="submit"
+            id="signup-btn"
+            class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Create Account
+          </button>
+
+          <p class="text-xs text-gray-500 text-center">
+            By signing up, you agree to our Terms of Service and Privacy Policy
+          </p>
+        </form>
+
+        <p class="text-sm text-center text-gray-400 mt-6">
+          Already have an account?
+          <a href="/sign-in" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+            Sign in
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-6 py-12 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <a href="/" class="flex items-center gap-2">
+            <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+            <span class="font-bold">Street Insights</span>
+          </a>
+          <p class="text-xs text-slate-500">
+            &copy; 2026 Street Insights. A <a href="https://www.boxfordpartners.com" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition-colors">Boxford Partners</a> product.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script define:vars={{ supabaseUrl: import.meta.env.PUBLIC_SUPABASE_URL, supabaseKey: import.meta.env.PUBLIC_SUPABASE_ANON_KEY, appUrl: import.meta.env.PUBLIC_APP_URL }}>
+      const SUPABASE_URL = supabaseUrl;
+      const SUPABASE_KEY = supabaseKey;
+      const APP_URL = appUrl || 'https://app.getstreetinsights.com';
+
+      document.getElementById('signup-form')?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirm-password');
+        const btn = document.getElementById('signup-btn');
+        const errorEl = document.getElementById('signup-error');
+
+        const email = emailInput.value.trim();
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+
+        if (!email || !password || !confirmPassword) return;
+
+        if (password !== confirmPassword) {
+          errorEl.textContent = 'Passwords do not match';
+          errorEl.classList.remove('hidden');
+          return;
+        }
+
+        if (password.length < 8) {
+          errorEl.textContent = 'Password must be at least 8 characters';
+          errorEl.classList.remove('hidden');
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Creating account...';
+        errorEl.classList.add('hidden');
+
+        try {
+          const res = await fetch(`${SUPABASE_URL}/auth/v1/signup`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'apikey': SUPABASE_KEY,
+            },
+            body: JSON.stringify({ email, password }),
+          });
+
+          const data = await res.json();
+
+          if (!res.ok) {
+            throw new Error(data.error_description || data.msg || 'Failed to create account');
+          }
+
+          // Check if email confirmation is required
+          if (data.user && !data.session) {
+            errorEl.textContent = 'Please check your email to confirm your account';
+            errorEl.classList.remove('hidden');
+            errorEl.classList.remove('text-red-400', 'bg-red-500/10', 'border-red-500/20');
+            errorEl.classList.add('text-emerald-400', 'bg-emerald-500/10', 'border-emerald-500/20');
+            btn.disabled = true;
+            btn.textContent = 'Check your email';
+          } else if (data.access_token) {
+            // Redirect to the app with the session tokens
+            const params = new URLSearchParams({
+              access_token: data.access_token,
+              refresh_token: data.refresh_token,
+              type: 'recovery',
+            });
+
+            window.location.href = `${APP_URL}#${params.toString()}`;
+          }
+        } catch (err) {
+          errorEl.textContent = err.message;
+          errorEl.classList.remove('hidden');
+          btn.disabled = false;
+          btn.textContent = 'Create Account';
+        }
+      });
+    </script>
+  </body>
+</html>
