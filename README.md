@@ -1,43 +1,65 @@
-# Astro Starter Kit: Minimal
+# Market Signals Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
+**[🔗 Live Site: getstreetinsights.com](https://getstreetinsights.com)**
+
+Marketing landing page for Market Signals — stock sentiment tracking platform with credibility-weighted source analysis.
+
+## Features
+
+- Modern, conversion-optimized landing page
+- Waitlist signup with Supabase backend
+- Stripe payment integration (coming soon)
+- Fast static site generation with Astro
+
+## Tech Stack
+
+- **Framework:** Astro 6
+- **Styling:** Tailwind CSS 4
+- **Backend:** Supabase (waitlist, user management)
+- **Payments:** Stripe (subscriptions)
+- **Deployment:** Vercel
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Copy environment variables
+cp .env.example .env
+# Add your Supabase and Stripe keys
+
+# Start dev server
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Visit `http://localhost:4321`
 
-## 🚀 Project Structure
+## Environment Variables
 
-Inside of your Astro project, you'll see the following folders and files:
+| Variable | Description | Source |
+|----------|-------------|--------|
+| `PUBLIC_SUPABASE_URL` | Supabase project URL | supabase.com |
+| `PUBLIC_SUPABASE_ANON_KEY` | Supabase anon/public key | supabase.com |
+| `STRIPE_SECRET_KEY` | Stripe secret key | stripe.com |
+| `PUBLIC_STRIPE_PUBLISHABLE_KEY` | Stripe publishable key | stripe.com |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+## Database Setup
+
+Run the SQL schema in `waitlist.sql` to create the waitlist table in your Supabase project.
+
+## Scripts
+
+```bash
+npm run dev      # Start dev server at localhost:4321
+npm run build    # Build for production
+npm run preview  # Preview production build locally
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Related Repositories
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- [market-signals](https://github.com/patrickboxfordpartners/market-signals) - Main application repository
 
-Any static assets, like images, can be placed in the `public/` directory.
+## License
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Private - Boxford Partners
