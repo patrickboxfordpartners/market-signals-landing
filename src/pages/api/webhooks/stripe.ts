@@ -53,7 +53,7 @@ export const POST: APIRoute = async ({ request }) => {
         const stripeSubscriptionId = session.subscription as string;
 
         if (user_id && plan) {
-          // User was already logged in when they checked out — update by user id
+          // User was already logged in when they checked out, update by user id
           const { error } = await supabase
             .from('user_profiles')
             .update({
@@ -71,7 +71,7 @@ export const POST: APIRoute = async ({ request }) => {
             console.log(`Subscription activated for user ${user_id}`);
           }
         } else if (stripeCustomerId && plan) {
-          // User paid before creating an account — upsert a pending profile row
+          // User paid before creating an account, upsert a pending profile row
           // keyed by stripe_customer_id. When the user signs up and the trigger
           // creates their profile, a subsequent login or webhook can reconcile.
           // For now we store the subscription data so it is not lost.
@@ -82,7 +82,7 @@ export const POST: APIRoute = async ({ request }) => {
                 // id is required (PK); we use a placeholder UUID derived from
                 // customer id that can be reconciled later. The safer approach
                 // is a separate pending_subscriptions table, but here we rely on
-                // the stripe_customer_id index — when the user signs up their
+                // the stripe_customer_id index, when the user signs up their
                 // trigger creates a row with id=auth.uid(); a follow-up call
                 // from the app can match and update using stripe_customer_id.
                 // So we only insert if no row exists yet for this customer.
@@ -97,7 +97,7 @@ export const POST: APIRoute = async ({ request }) => {
             .select();
 
           if (error) {
-            // Expected if the row doesn't have an id yet — log and move on.
+            // Expected if the row doesn't have an id yet, log and move on.
             // The subscription data will be reconciled when the user signs up.
             console.error('Error upserting pending subscription (will reconcile on sign-up):', error.message);
           } else {
